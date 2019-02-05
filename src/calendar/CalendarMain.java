@@ -25,17 +25,26 @@ public class CalendarMain {
 		
 		////2. 입력받은 월의 최대 일수 출력하기
 		//// 31일 : 1,3,5,7,8,10,12월    30일: 4,6,9,11월     28일: 2월
+		int month = 0;
+		String PROMPT =">";
 		
+		while (month != -1){
 		System.out.println("달을 입력하세요:");
+		System.out.print(PROMPT);
 		Scanner scanner = new Scanner(System.in);
 		String value = scanner.nextLine();
-		int month = Integer.parseInt(value);
+		month = Integer.parseInt(value);
 		
 		int[] maxDays = {31,28,31,30,31,30,31,31,30,31,30,31};
 		
-		int maxDay = maxDays[month-1];
-		
+		if (month>0){
+		int maxDay = maxDays[month-1];		
 		System.out.println(month + "월은 " + maxDay +"일까지 있습니다.");
+		}
+		
+		}
+		System.out.println("Have a nice day!");
+		
 		
 //		int[] day31 = {1,3,5,7,8,10,12};
 //		int[] day30 = {4,6,9,11};
