@@ -23,8 +23,8 @@ public class CalendarMain {
 //		System.out.println("두수의 합은 "+  result + "입니다." );
 
 		
-		//2. 입력받은 월의 최대 일수 출력하기
-		// 31일 : 1,3,5,7,8,10,12월    30일: 4,6,9,11월     28일: 2월
+		////2. 입력받은 월의 최대 일수 출력하기
+		//// 31일 : 1,3,5,7,8,10,12월    30일: 4,6,9,11월     28일: 2월
 		
 		System.out.println("달을 입력하세요:");
 		Scanner scanner = new Scanner(System.in);
